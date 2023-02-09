@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- declare parameters -->
+<param name="desired_x_distance_in_m" value="8.0"/>
+
+<!-- rosrun turtlesim turtlesim_node -->
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"></node>
+
+<!-- rosrun my_turtle_controller draw_circle
+<node pkg="my_turtle_controller" type="draw_circle" name="draw_circle"></node>
+-->
+
+<!-- rosrun my_turtle_controller my_turtle_pose_subscriber
+<node pkg="my_turtle_controller" type="my_turtle_pose_subscriber" name="my_turtle_pose_subscriber" output="screen"></node>
+-->
+
+<!-- rosrun my_turtle_controller my_turtle_pose_control -->
+<node pkg="my_turtle_controller" type="my_turtle_pose_control" name="my_turtle_pose_control" output="screen"></node>
+
+
+</launch>

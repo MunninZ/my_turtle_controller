@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+<!-- rosrun turtlesim turtlesim_node -->
+<node pkg="turtlesim" type="turtlesim_node" name="turtlesim_node"></node>
+
+<!-- rosrun my_turtle_controller draw_circle_cw -->
+<node pkg="my_turtle_controller" type="draw_circle_cw" name="draw_circle_cw"></node>
+
+</launch>
